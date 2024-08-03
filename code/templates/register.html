@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/register.css">
+</head>
+<body>
+    <div class = "container">
+        <div class="text">
+            <h1>Register</h1>
+        </div>
+        <div class="text">
+        <div class="register-form">
+            <form method="POST" >
+                <div class="form-group">
+                    <label for="userid">User ID</label>
+                    <input type="text" class="form-control" id="userid" placeholder="User ID" name="userid"/>
+                <div class="form-group">
+                    <label for="username">User name</label>
+                    <input type="text" class="form-control" id="username" placeholder="User name" name="username"/>
+
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="password"/>
+                </div>
+                <div class="form-group">
+                    <label for="re_password">Password Confirm</label>
+                    <input type="password" class="form-control" id="re_password" placeholder="Password Confirm" name="re_password"/>
+                </div>
+                <button type="submit" class="btn btn-primary create-button" style="background-color: #000000;">Create</button>
+                <label for="warning" class="warning">{{ warning }}</label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
